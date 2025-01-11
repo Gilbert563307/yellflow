@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 1 import stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- 2 import javascript -->
+  </head>
+  <body>
+    <section class="content">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <!-- 3. maak nieuws box article -->
+    <section class="news-box-section">
+      <article class="news-box-article">
+        <!-- 4. zet de rest van de html elementen -->
+        <div class="news-box-article-first-section">
+          <img src="./src/email_svg.svg" alt="Email logo" />
+        </div>
+
+        <div class="news-box-article-second-section">
+          <div>
+            <p class="news-box-article-header">Nieuwsbrief</p>
+            <p>
+              Schrijf je in voor de nieuwsbrief en ontvang tips en
+              reisinspiratie voor je volgende reis!
+            </p>
+          </div>
+
+          <div class="news-box-article-second-section-actions">
+            <p class="mesage-p">Volg ons op Social Media</p>
+            <div class="action-btns-group">
+              <a
+                class="action-btns instagram-btn"
+                target="_blank"
+                href="https://www.instagram.com/styleintravelreizen/"
+              >
+                <img
+                  class="svg_logos"
+                  src="./src/instagram_svg.svg"
+                  alt="instagram logo"
+                />
+              </a>
+              <a
+                class="action-btns facebook-btn"
+                target="_blank"
+                href="https://www.facebook.com/StyleinTravel"
+              >
+                <img class="svg_logos" src="./src/facebook_svg.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-box-article-last-section">
+          <div class="news-box-article-action-section">
+            <input
+              type="text"
+              class="news-box-email-input"
+              id="news-box-email-inptut-1"
+              placeholder="E-mailadres *"
+            />
+            <button class="news-box-send-button" onclick="sendNewsLetter()">
+              <div>
+                VERSTUUR
+                <img
+                  class="arrow-right"
+                  src="./src/right-arrow_svg.svg"
+                  alt="arrow right"
+                />
+              </div>
+            </button>
+          </div>
+          <p id="news-box-notificaton"></p>
+        </div>
+      </article>
+    </section>
+
+    <footer>x</footer>
+  </body>
+  <script src="./script.js"></script>
+</html>

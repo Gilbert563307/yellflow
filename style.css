@@ -1,0 +1,217 @@
+* {
+  margin: 0; /* Verwijder standaard marge van alle elementen */
+  /* font-size: 16px; */
+  color: #002448; /* Zet de standaard tekstkleur */
+}
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: Futura Regular, sans-serif, -apple-system, linkMacSystemFont,
+    Segoe UI, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol; /* Zet het aangepaste lettertype voor body en kopteksten */
+}
+
+.news-box-section {
+  background-color: #d6dce2; /* Lichte grijze achtergrondkleur */
+  display: flex; /* Gebruik flexbox voor de layout */
+  justify-content: center; /* Centreer de inhoud */
+  position: sticky; /* Maak de sectie sticky */
+  padding: 3em; /* Voeg padding toe binnen de sectie */
+}
+
+.news-box-article-animating {
+  animation-name: slide_in_from_bottom; /* Definieer de animatie */
+  animation-duration: 2s; /* Duur van de animatie */
+  animation-timing-function: ease; /* Vloeiende overgang voor de animatie */
+  animation-fill-mode: forwards; /* Behoud de eindtoestand van de animatie */
+  position: sticky; /* Maak het artikel sticky */
+  bottom: 0; /* Plaats het onderaan */
+  width: 100%; /* Neem de volledige breedte in beslag */
+}
+
+.news-box-article {
+  display: flex; /* Flexbox layout voor artikelen */
+  gap: 1em; /* Voeg ruimte tussen de elementen toe */
+}
+
+.news-box-article-first-section > img {
+  height: 45px; /* Zet de hoogte van de afbeelding */
+  width: 45px; /* Zet de breedte van de afbeelding */
+  margin-top: -13px; /* Pas de verticale positie van de afbeelding aan */
+}
+
+.news-box-article-second-section {
+  display: flex; /* Flexbox voor de tweede sectie */
+  flex-direction: column; /* Zet de elementen verticaal */
+  gap: 1em; /* Voeg ruimte tussen de elementen toe */
+}
+
+.news-box-article-second-section-actions {
+  display: flex; /* Flexbox voor de actieknoppen */
+  gap: 1em; /* Voeg ruimte tussen de actieknoppen toe */
+}
+
+.action-btns-group {
+  display: flex; /* Flexbox voor de knopgroep */
+  gap: 0.8em; /* Voeg ruimte tussen de knoppen toe */
+}
+
+.action-btns {
+  border: none; /* Verwijder de rand van de knoppen */
+  display: inline-flex; /* Inline flex voor de knoppen */
+  justify-content: center; /* Centreer de inhoud van de knop */
+  align-items: center; /* Centreer de inhoud verticaal */
+  width: 40px; /* Zet de breedte van de knop */
+  height: 40px; /* Zet de hoogte van de knop */
+}
+
+.svg_logos {
+  margin: 0.1em; /* Kleine marge voor de logo's */
+  height: 20px; /* Zet de hoogte van de logo's */
+  width: 20px; /* Zet de breedte van de logo's */
+}
+
+.instagram-btn {
+  background-color: #be526c; /* Achtergrondkleur voor Instagram-knop */
+}
+.facebook-btn {
+  background-color: #405a94; /* Achtergrondkleur voor Facebook-knop */
+}
+
+.mesage-p {
+  display: inline-flex; /* Inline flex voor de paragraaf */
+  align-items: flex-end; /* Align de inhoud naar de onderkant */
+  font-weight: 550; /* Zet het lettertype vet */
+  margin-bottom: 0 !important; /* Verwijder de ondermarge */
+  padding: 0; /* Verwijder de padding */
+}
+
+.news-box-article-action-section {
+  margin-top: 1em; /* Voeg bovenmarge toe */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centreer de inhoud */
+  align-items: center; /* Centreer de inhoud verticaal */
+  align-content: center; /* Centreer de inhoud over meerdere lijnen */
+}
+
+.news-box-email-input {
+  display: inline-flex; /* Inline flex voor het e-mailinvoerveld */
+  border: 2px solid #a8a8a8; /* Lichte randkleur */
+  padding: 10px 120px 10px 20px; /* Padding met extra ruimte aan de rechterkant */
+  margin-right: 0; /* Verwijder rechtermarge */
+}
+
+.news-box-send-button {
+  cursor: pointer; /* Toon de pointercursor */
+  padding: 3px 8px 3px 8px; /* Padding voor de knop */
+  margin-left: 0; /* Verwijder de linker marge */
+  background-color: #002448; /* Zet de achtergrondkleur voor de knop */
+  font-weight: bold; /* Zet de tekst vet */
+  border: none; /* Verwijder de rand van de knop */
+}
+
+.news-box-send-button > div {
+  color: #fff; /* Witte tekstkleur binnen de knop */
+  display: inline-flex; /* Inline flex voor de knoptekst */
+  justify-content: center; /* Centreer de knoptekst */
+  align-items: center; /* Centreer de tekst verticaal */
+  font-size: 12px; /* Zet het lettertypeformaat voor de tekst */
+  margin: 0.5em; /* Voeg marge toe rond de tekst */
+}
+
+#news-box-notificaton {
+  display: none; /* Verberg de notificatie standaard */
+  margin-top: 0.5em; /* Voeg bovenmarge toe */
+}
+
+.error-mail {
+  color: red !important; /* Rode kleur voor foutmeldingen */
+}
+
+.success-mail {
+  color: green !important; /* Groene kleur voor succesmeldingen */
+}
+
+.arrow-right {
+  height: 20px; /* Zet de hoogte voor het pijltje */
+}
+
+.news-box-article-header {
+  font-weight: 550; /* Zet het lettertype vet voor de koptekst */
+}
+
+.news-box-article-action-section > input::placeholder {
+  font-size: 15px; /* Zet het lettertypeformaat voor de placeholdertekst */
+}
+
+.news-box-article-last-section {
+  margin-left: 1.3em; /* Voeg linker marge toe voor de laatste sectie */
+}
+
+.news-box-send-button:hover {
+  background-color: green; /* Verander de achtergrondkleur naar groen bij hover */
+}
+
+.content {
+  display: grid; /* Gebruik gridlayout */
+  grid-template-rows: 2fr; /* Definieer de rijen in de grid */
+}
+
+.content > div {
+  min-height: 250px; /* Zet de minimale hoogte van de div-elementen */
+}
+
+.content > div:nth-child(odd) {
+  background-color: #002448; /* Zet de achtergrondkleur voor oneven elementen */
+}
+
+.content {
+  display: flex; /* Flexbox layout voor de content */
+  flex-direction: column; /* Zet de content verticaal */
+  justify-content: space-between; /* Verspreid de inhoud */
+  gap: 1em; /* Voeg ruimte tussen de elementen toe */
+}
+
+footer {
+  min-height: 250px; /* Zet de minimale hoogte voor de footer */
+  background-color: #002448; /* Zet de achtergrondkleur van de footer */
+}
+
+@keyframes slide_in_from_bottom {
+  0% {
+    transform: translateY(100%); /* Begin buiten het scherm onderaan */
+    opacity: 0; /* Begin volledig transparant */
+  }
+  100% {
+    transform: translateY(0); /* Kom naar de uiteindelijke positie */
+    opacity: 1; /* Word volledig zichtbaar */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .news-box-section {
+    flex-direction: column; /* Zet de layout van de sectie op kolommen bij smalle schermen */
+    padding: 25px 10px 25px 10px;
+  }
+
+  .news-box-article {
+    flex-direction: column; /* Zet de layout van de artikelen op kolommen bij smalle schermen */
+  }
+
+  .news-box-article-action-section {
+    margin-top: 0; /* Verwijder bovenmarge bij smalle schermen */
+    align-items: none; /* Verwijder de verticale uitlijning */
+  }
+
+  .news-box-article-last-section {
+    margin: 0; /* Verwijder de marge voor de laatste sectie */
+    padding: 0; /* Verwijder de padding */
+  }
+
+  .news-box-article-animating {
+    width: auto; /* Zet de breedte op automatisch bij smalle schermen */
+  }
+}
