@@ -29,7 +29,6 @@ h4 {
   animation-fill-mode: forwards; /* Behoud de eindtoestand van de animatie */
   position: sticky; /* Maak het artikel sticky */
   bottom: 0; /* Plaats het onderaan */
-  width: 100%; /* Neem de volledige breedte in beslag */
 }
 
 .news-box-article {
@@ -143,6 +142,9 @@ h4 {
   font-weight: 550; /* Zet het lettertype vet voor de koptekst */
 }
 
+.news-box-email-input:focus {
+  outline: none; /* Removes the focus outline */
+}
 .news-box-article-action-section > input::placeholder {
   font-size: 15px; /* Zet het lettertypeformaat voor de placeholdertekst */
 }
@@ -213,5 +215,9 @@ footer {
 
   .news-box-article-animating {
     width: auto; /* Zet de breedte op automatisch bij smalle schermen */
+  }
+
+  .news-box-email-input {
+    padding: 10px 50px 10px 20px; 
   }
 }
